@@ -16,13 +16,15 @@ import img2 from "../assets/news2.svg";
 import arrow from "../assets/arrow.svg";
 
 import { NavLink } from "react-router-dom";
-import SectionTitles from "./SectionTitles";
+import SectionTitles from "../SectionTitles";
 
 const News = () => {
     return (
         <Flex direction={"column"} gap={17}>
             <SectionTitles ts={{weight:700, size:40}} > Development Blog </SectionTitles>
-            <Flex gap={24}>
+            <Flex gap={24} sx={{ '&media (min-width: 1040px)': {
+                display: "flex", direction: "column"
+            } }} >
             <Card w={490} h={298} radius={5} bg="paleOrange.0" shadow="xl" >
                     <Card.Section>
                         <Image height={151} width={490} src={img1} />
@@ -56,7 +58,7 @@ const News = () => {
                 </Card>
             </Flex>
             <Flex justify={"end"}>
-                <Button component={NavLink} to="/" color="paleOrange.0" w={206} h={52}>
+                <Button component={NavLink} to="/" color="paleOrange.0" w={206} h={52} sx={{ "&:hover": { backgroundColor: "paleOrange.1" } }}>
                     <Text weight={700} size={26} lh={29}>
                         Browse News
                     </Text>

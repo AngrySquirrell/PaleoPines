@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar";
-import ExtendedHeader from "../components/ExtendedHeader";
 import {
     Header,
     Box,
@@ -10,9 +8,12 @@ import {
     BackgroundImage,
     Center,
 } from "@mantine/core";
-import News from "../components/News";
-import Photos_Texts from "../components/Photo&Text";
-import ArtGallery from "../components/ArtGallery";
+import Navbar from "../components/Home/Navbar";
+import ExtendedHeader from "../components/Home/ExtendedHeader";
+import News from "../components/Home/News";
+import Photos_Texts from "../components/Home/Photo&Text";
+import ArtGallery from "../components/Home/ArtGallery";
+import Footer from "../components/Home/Footer";
 
 const Home = () => {
     return (
@@ -24,6 +25,7 @@ const Home = () => {
             </Center>
             <Photos_Texts/>
             <ArtGallery/>
+            <Footer/>
         </>
     );
 };

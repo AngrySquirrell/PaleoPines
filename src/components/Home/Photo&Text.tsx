@@ -10,11 +10,11 @@ import {
     Card,
     Group,
 } from "@mantine/core";
-import SectionTitles from "./SectionTitles";
+import SectionTitles from "../SectionTitles";
 import img1 from "../assets/photos&texts/photo1.svg";
 import img2 from "../assets/photos&texts/photo2.svg";
 import img3 from "../assets/photos&texts/photo3.svg";
-import AlternateDivs from "./AlternateDivs";
+import AlternateDivs from "../AlternateDivs";
 
 const Photos_Texts = () => {
     let divs = [
