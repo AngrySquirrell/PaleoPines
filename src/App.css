@@ -1,0 +1,6 @@
+.gradientNavbar {
+    background: linear-gradient(  rgba(0, 0, 0, 0.54) 0%, rgba(217, 217, 217, 0) 100%, rgba(0, 0, 0, 0.54) 100% );
+}
+.ui{
+    height: 500px;
+}
