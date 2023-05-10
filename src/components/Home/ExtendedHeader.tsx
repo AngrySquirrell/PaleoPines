@@ -1,18 +1,9 @@
-import React from "react";
-import {
-    Header,
-    Box,
-    Flex,
-    Image,
-    Text,
-    Button,
-    BackgroundImage,
-} from "@mantine/core";
+import { BackgroundImage, Box, Button, Flex, Image, Text } from "@mantine/core";
+import { NavLink } from "react-router-dom";
+import "../../App.css";
 import bgi from "../../assets/BackgroundImage.svg";
 import logo from "../../assets/Logo.svg";
 import steam from "../../assets/steam_1.svg";
-import { NavLink } from "react-router-dom";
-import "../../App.css";
 
 const ExtendedHeader = () => {
     return (
