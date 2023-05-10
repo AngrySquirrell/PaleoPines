@@ -1,22 +1,9 @@
-import {
-    Header,
-    Box,
-    Flex,
-    Image,
-    Text,
-    Button,
-    BackgroundImage,
-    Center,
-    Card,
-    Group,
-    AspectRatio,
-    Divider,
-} from "@mantine/core";
-import twitter from "../../assets/icons8-twitter-144.svg";
+import { Divider, Flex, Image, Text } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
+import { Link } from "react-router-dom";
 import facebook from "../../assets/icons8-facebook-144.svg";
 import instagram from "../../assets/icons8-instagram-144.svg";
-import { Link } from "react-router-dom";
-import { useMediaQuery } from "@mantine/hooks";
+import twitter from "../../assets/icons8-twitter-144.svg";
 
 const Footer = () => {
     const matchMD = useMediaQuery("(max-width: 840px)");

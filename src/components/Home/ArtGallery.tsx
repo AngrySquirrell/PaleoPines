@@ -1,22 +1,9 @@
-import React from "react";
-import {
-    Header,
-    Box,
-    Flex,
-    Image,
-    Text,
-    Button,
-    BackgroundImage,
-    Center,
-    Card,
-    Group,
-    AspectRatio,
-} from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
-import SectionTitles from "../SectionTitles";
-import img1 from "../../assets/ArtGallery/image1.svg";
+import { Box, Flex, Image } from "@mantine/core";
 import arrowL from "../../assets/ArtGallery/arrowL.svg";
 import arrowR from "../../assets/ArtGallery/arrowR.svg";
+import img1 from "../../assets/ArtGallery/image1.svg";
+import SectionTitles from "../SectionTitles";
 
 const ArtGallery = () => {
     return (

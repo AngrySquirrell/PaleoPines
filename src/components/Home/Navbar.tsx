@@ -1,15 +1,15 @@
-import { Header, Box, Flex, Image } from "@mantine/core";
+import { Flex, Header, Image } from "@mantine/core";
+import { useViewportSize, useWindowScroll } from "@mantine/hooks";
 import { Link, NavLink } from "react-router-dom";
-import img_1 from "../../assets/img_1.svg";
-import twitter from "../../assets/icons8-twitter-144.svg";
+import "../../App.css";
 import facebook from "../../assets/icons8-facebook-144.svg";
 import instagram from "../../assets/icons8-instagram-144.svg";
-import "../../App.css";
-import { useWindowScroll, useViewportSize } from "@mantine/hooks";
+import twitter from "../../assets/icons8-twitter-144.svg";
+import img_1 from "../../assets/img_1.svg";
 
 const Navbar = () => {
-    const [scroll, scrollTo] = useWindowScroll();
-    const { width, height } = useViewportSize();
+    const [scroll] = useWindowScroll();
+    const { height } = useViewportSize();
     return (
         <Header
             height={{ base: 80 }}

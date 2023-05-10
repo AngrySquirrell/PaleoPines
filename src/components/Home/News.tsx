@@ -1,19 +1,6 @@
-import React from "react";
-import {
-    Header,
-    Box,
-    Flex,
-    Image,
-    Text,
-    Button,
-    BackgroundImage,
-    Center,
-    Card,
-    Group,
-} from "@mantine/core";
+import { Button, Card, Flex, Image, Text } from "@mantine/core";
 import img1 from "../../assets/news1.svg";
 import img2 from "../../assets/news2.svg";
-import arrow from "../assets/arrow.svg";
 
 import { NavLink } from "react-router-dom";
 import SectionTitles from "../SectionTitles";

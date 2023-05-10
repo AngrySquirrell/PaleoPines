@@ -1,16 +1,4 @@
-import React from "react";
-import {
-    Header,
-    Box,
-    Flex,
-    Image,
-    Text,
-    Button,
-    BackgroundImage,
-    Center,
-    Card,
-    Group,
-} from "@mantine/core";
+import { Box, Flex, Image, Text } from "@mantine/core";
 
 interface Props {
     data?: {
