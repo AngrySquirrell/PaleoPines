@@ -11,9 +11,9 @@ import {
     Group,
 } from "@mantine/core";
 import SectionTitles from "../SectionTitles";
-import img1 from "../assets/photos&texts/photo1.svg";
-import img2 from "../assets/photos&texts/photo2.svg";
-import img3 from "../assets/photos&texts/photo3.svg";
+import img1 from "../../assets/photos&texts/photo1.svg";
+import img2 from "../../assets/photos&texts/photo2.svg";
+import img3 from "../../assets/photos&texts/photo3.svg";
 import AlternateDivs from "../AlternateDivs";
 
 const Photos_Texts = () => {
@@ -48,7 +48,6 @@ const Photos_Texts = () => {
                     weight: 700,
                     size: 40,
                     color: "white",
-                    lh: 48,
                     lineClamp: 5,
                 }}
                 fs={{ py: 24 }}

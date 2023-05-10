@@ -8,23 +8,21 @@ import {
     Button,
     BackgroundImage,
 } from "@mantine/core";
-import bgi from "../assets/BackgroundImage.svg";
-import logo from "../assets/Logo.svg";
-import steam from "../assets/steam_1.svg";
+import bgi from "../../assets/BackgroundImage.svg";
+import logo from "../../assets/Logo.svg";
+import steam from "../../assets/steam_1.svg";
 import { NavLink } from "react-router-dom";
-import "../App.css";
+import "../../App.css";
 
 const ExtendedHeader = () => {
     return (
         <>
-            <Box
-                mih={"fit-content"}
-                miw={"fit-content"}
-                className="gradientHeader"
-            >
-                <BackgroundImage src={bgi}>
+            <Box mih={"100vh"} miw={"100%"} className="gradientHeader">
+                <BackgroundImage src={bgi} h={"100vh"}>
                     <Flex
                         direction="column"
+                        justify={"space-between"}
+                        h={"100%"}
                         sx={(theme) => ({
                             background: theme.fn.linearGradient(
                                 0,
@@ -36,14 +34,14 @@ const ExtendedHeader = () => {
                         <Flex justify={"center"} pt={60}>
                             <Image src={logo} maw={466} />
                         </Flex>
-                        <Flex justify={"space-between"} mt={"59vh"} mb={52}>
+                        <Flex justify={"space-between"} mt={""} mb={52}>
                             <Text
                                 align={"end"}
                                 c={"white"}
                                 pl={40}
                                 weight={"bold"}
-                                size={"lg"} lts={'0.015rem'}
-                                
+                                size={"lg"}
+                                lts={"0.015rem"}
                             >
                                 Your prehistoric adventure awaits…
                             </Text>
@@ -63,7 +61,9 @@ const ExtendedHeader = () => {
                                 }
                                 color="paleOrange.0"
                             >
-                                <Text size={"26px"} weight={700} >Download</Text>
+                                <Text size={"26px"} weight={700}>
+                                    Download
+                                </Text>
                             </Button>
                         </Flex>
                     </Flex>

@@ -10,51 +10,24 @@ import {
     Center,
     Card,
     Group,
+    FlexProps,
+    TextProps,
 } from "@mantine/core";
 
 interface Props {
     children?: React.ReactNode;
-    ts?: {
-        weight?: number;
-        size?: number;
-        miw?: string;
-        lineClamp?: number;
-        color?: string;
-        lh?: number;
-    };
-    fs?: {
-        px?: number;
-        py?: number;
-
-        mx?: number;
-        my?: number;
-
-    };
+    ts?: TextProps;
+    fs?: FlexProps;
 }
 
 const SectionTitles = ({ children = "Placeholder", ts, fs }: Props) => {
     return (
-        <Flex
-            justify={"center"}
-            align={"center"}
-            w={"100%"}
-            h={92}
-            px={fs?.px}
-            py={fs?.py}
-            mx={fs?.mx}
-            my={fs?.my}
-        >
+        <Flex justify={"center"} align={"center"} w={"100%"} h={92} {...fs}>
             <Text
-                weight={ts?.weight}
-                size={ts?.size}
-                miw={ts?.miw}
-                lineClamp={ts?.lineClamp}
-                color={ts?.color}
-                lh={ts?.lh}
+                {...ts}
                 sx={(theme) => ({
                     textShadow: `0px 4px 4px rgba(0, 0, 0, 0.25)`,
-                })
-                }
+                })}
             >
                 {children}
             </Text>

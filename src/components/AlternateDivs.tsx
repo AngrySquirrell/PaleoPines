@@ -23,32 +23,42 @@ interface Props {
 
 const AlternateDivs = ({ data, i }: Props) => {
     return (
-        <Flex justify={"center"} align={"center"} w={"100%"} gap={42}>
-            {i % 2 === 0 ? (<Image width={550} src={data?.img} />) : <></>}
-                    <Box>
-                        <Text
-                            align="center"
-                            h={44}
-                            w={564}
-                            color="white"
-                            weight={731}
-                            size={32}
-                        >
-                            {data?.title}
-                        </Text>
-                        <Text
-                            lineClamp={5}
-                            h={160}
-                            w={564}
-                            color="white"
-                            weight={578}
-                            size={20}
-                            align="justify"
-                        >
-                            {data?.text}
-                        </Text>
-                    </Box>
-                    {i % 2 !== 0 ? (<Image width={550} src={data?.img} />) : <></>}
+        <Flex
+            wrap={i % 2 === 0 ? "wrap" : "wrap-reverse"}
+            justify={"center"}
+            align={"center"}
+            w={"100%"}
+            gap={42}
+            sx={{
+                "&:nth-child(odd)": {
+                    flexDirection: "row-reverse",
+                },
+            }}
+        >
+            <Image width={550} src={data?.img} />
+            <Box>
+                <Text
+                    align="center"
+                    h={44}
+                    w={564}
+                    color="white"
+                    weight={731}
+                    size={32}
+                >
+                    {data?.title}
+                </Text>
+                <Text
+                    lineClamp={5}
+                    h={160}
+                    w={564}
+                    color="white"
+                    weight={578}
+                    size={20}
+                    align="justify"
+                >
+                    {data?.text}
+                </Text>
+            </Box>
         </Flex>
     );
 };

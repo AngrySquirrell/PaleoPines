@@ -20,12 +20,12 @@ const Home = () => {
         <>
             <Navbar />
             <ExtendedHeader />
-            <Center h={500} px={"40px"} pt={17} pb={35}>
+            <Center h={"fit-content"} px={"40px"} pt={17} pb={35}>
                 <News />
             </Center>
-            <Photos_Texts/>
-            <ArtGallery/>
-            <Footer/>
+            <Photos_Texts />
+            <ArtGallery />
+            <Footer />
         </>
     );
 };
